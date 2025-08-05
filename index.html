@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>EmberStore</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmberStore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div>    
-            <i class="fa-solid fa-bolt"></i>
-            <h1>EmberStore</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#about">Sobre Nós</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+
+  <button id="toggleMenu" class="menu-toggle" title="Abrir menu lateral">
+        <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <aside class="sidebar">
+    <h2>EmberStore</h2>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre Nós</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="main-content">
+    <header class="header">
+      <div class="header-content">
+        <input type="text" class="search" placeholder="Buscar no site...">
+        <nav class="nav">
+          <button class="nav-btn active">Todos</button>
+          <button class="nav-btn"><i class="fa-solid fa-mobile"></i> Smartphones</button>
+          <button class="nav-btn"><i class="fa-solid fa-laptop"></i> Notebooks</button>
+          <button class="nav-btn"><i class="fa-solid fa-headphones"></i> Fones</button>
+          <button class="nav-btn"><i class="fa-solid fa-keyboard"></i> Acessórios</button>
+          <button class="nav-btn"><i class="fa-solid fa-clock"></i> Smartwatches</button>
+        </nav>
+      </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Bem-vindo à EmberStore!</h2>
-            <p>Explore nossos produtos incríveis e aproveite as melhores ofertas.</p>
-            <div class="hero-image"></div>
-        </section>
+    <main class="main" id="home">
+      <section class="banner">
+        <h2>Black Friday Antecipada!</h2>
+        <p>Até 50% de desconto em produtos selecionados</p>
+      </section>
 
-        <section id="products">
-            <h2>Nossos Produtos</h2>
-            <!-- Lista de produtos será inserida aqui -->
-        </section>
+      <section class="about" id="about">
+        <h2>Sobre Nós</h2>
+        <p>A EmberStore é a sua loja online de confiança, oferecendo uma ampla gama de produtos de qualidade. Trabalhamos com tecnologia de ponta e preços acessíveis para todos.</p>
+      </section>
 
-        <section id="about">
-            <h2>Sobre Nós</h2>
-            <p>EmberStore é a sua loja online de confiança, oferecendo uma ampla gama de produtos de qualidade.</p>
-        </section>
+      <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <p>Para mais informações, entre em contato conosco através do e-mail: <strong>luigihenryc@gmail.com</strong></p>
+      </section>
+    </main>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>Para mais informações, entre em contato conosco através do email:
+    <footer class="footer">
+      <p>&copy; 2025 EmberStore. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+<script src="app.js"></script>
 </body>
 </html>
